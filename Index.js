@@ -284,7 +284,7 @@ function loadPage(page) {
       }
       
       else if (page === 'settings.html') {
-           loadSettingsScript();
+          /* loadSettingsScript();*/
             }
         })
         .catch(error => console.error('Error loading page:', error));
