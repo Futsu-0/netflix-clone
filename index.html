@@ -11,30 +11,34 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
-   <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.rel='stylesheet'">
-  <noscript>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </noscript>
+  <script src="https://kit.fontawesome.com/e4812d62da.js" crossorigin="anonymous"></script>
   </head>
   <body>
+  	<div class="body-content">
+  	<div id="body-content">
     <div class="top-dashboard">
       <div class="left-side">
-      <img class="netflix-icon" src="Thumbnails/netflix.png">
+   <!--   <img class="netflix-icon" src="Thumbnails/netflix.png">-->
+   <p class="app-logo">
+   <span class="app-name">NYX</span>
+ <!--  <span class="fas fa-star"></span>-->
+   	</p>
       </div>
       <div class="right-side">
-      <span class="material-icons search-icon">search</span>
-      <span class="material-icons account-circle">account_circle</span>
+     <!-- 	<div id="homesearchContainer">
+      <i id="homesearchIcon" class="fas fa-search"></i>
+      </div>-->
+      <i class="fas fa-user-circle"></i>
+    <!-- <img class="user-account-image" src="Thumbnails/user-account.png">-->
       </div>
-  <!-- <div class="category-bar">
-      <div style="margin-left: 30px">Tv Shows</div>
-      <div>Movies</div>
-      <div style="margin-right: 30px">Categories</div>
-    </div>-->
     </div>
     
     <div class="main-poster">
-    <img class="poster1" src="" id="mainPoster">
-    <div class="poster-gradient"></div>
+    <img class="poster1" id="mainPoster">
+    <div class="poster-gradient">
+    	<p class="main-poster-title"></p>
+    	<p class="main-poster-genres"></p>
+    </div>
    <!-- main posters will be displayed here-->
    <!--   <div class="main-poster-options">
         <div class="left-section">--
@@ -100,30 +104,41 @@
   <!-- anime will be shown here-->
       </div>
       </div>
+      </div>
 
 
-  <div class="bottom-dashboard">
-    <div class="bottom-dashboard-containers" style="margin-left: 30px">
-  <span class="material-icons home-icon" >home</span>
+  <nav class="bottom-dashboard">
+    <div id="homeButton" class="bottom-dashboard-containers">
+    	
+ <span class="fas fa-home"></span>
   <p style="font-size: 13px; font-weight: 300">Home</p>
   </div>
-  <div class="bottom-dashboard-containers">
-  <span class="material-icons downloads-icon">download</span>
-  <p style="font-size: 13px; font-weight: 300">Downloads</p>
+  <div class="bottom-dashboard-containers" id="searchButton">
+ <span class="fas fa-search" style="margin-left:25px"></span>
+  <p style="font-size: 13px; font-weight: 300">Search</p>
   </div>
-  <div class="bottom-dashboard-containers">
-  	<span class="material-icons format-list-bulleted">format_list_bulleted</span>
+  <div class="bottom-dashboard-containers" id="watchlistButton">
+  <span class="fas fa-list"></span>
   	<p style="font-size: 13px; font-weight: 300">Watchlist</p>
   </div>
-  <div class="bottom-dashboard-containers" id="menuButton" style="margin-right: 30px">
-  <span class="material-icons settings-icon">settings</span>
+  <div class="bottom-dashboard-containers" id="settingsButton">
+  <!--	<a href="Settings.html">-->
+  <span class="fas fa-cog"></span>
   <p style="font-size: 13px ;font-weight: 300">Settings</p>
+ 
+  
   </div>
-</div>
+</nav>
+
+<!--<div id="content-container">
+ </div>--
   <!-- hidden menu overlay-->
-  <div class="menu-container" id="menuContainer" style="display: none;">
+  <div class="settings-container" id="settingsContainer" style="display: none;">
+</div>
 </div>
 
-    <script src="netflix.js"></script>
+    <script src="Index.js">
+    </script>
   </body>
 </html>
+
